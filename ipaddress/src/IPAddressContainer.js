@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-
+import IPAddress from "./IPAddress";
 let xhr;
 
 
@@ -34,7 +34,7 @@ class IPAddressContainer extends Component{
 
     render() {
         return (
-            <p>{this.state.ip_address}</p>
+            <IPAddress ip={this.state.ip_address}/>
         );
     }
 }
