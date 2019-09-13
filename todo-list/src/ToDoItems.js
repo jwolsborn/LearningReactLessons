@@ -16,9 +16,9 @@ class ToDoItems extends Component {
         let listItems = todoEntries.map(this.createTasks);
 
         return(
-            <u1 className="theList">
+            <ul className="theList">
                 {listItems}
-            </u1>
+            </ul>
         );
      }
 };
