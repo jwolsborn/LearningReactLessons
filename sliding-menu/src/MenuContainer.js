@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import MenuButton from "./MenuButton.js";
 
 class MenuContainer extends Component {
     constructor(props){
@@ -27,6 +28,8 @@ class MenuContainer extends Component {
 
     render(){
         return(
+            <>
+            <MenuButton handleMouseDown = {this.handleMouseDown}/>
             <div>
                 <div>
                     <p>Can you spot the item that doesn't belong?</p>
@@ -41,6 +44,7 @@ class MenuContainer extends Component {
                     </u1>
                 </div>
             </div>
+            </>
         )
     }
 }
